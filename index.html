@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Bnotes</title>
+
+
+  <!-- Favicons -->
+  <link href="assets/img/stickies-fill.svg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+<header id="header">
+  <div class="brand">
+    <h4 class=" bold"> Bnotes</h4><i class="bi bi-stickies-fill h5"></i>
+  </div>
+  <a href="#">Mis notas</a>
+  <a href="#">Iniciar sesión</a>
+</header>
+<body>
+
+  <main id="main">
+    
+<p id="pe"></p>
+
+
+<div class="closed card " id="editor">
+  <div class="editorbar">
+
+  <a id="salir" class="salir" data-id=""><i class="bi bi-arrow-left h3"></i></a>
+<div>
+  <button class="bi bi-type-bold" onclick="document.execCommand('bold')"></button>
+  <button class="bi bi-type-italic" onclick="document.execCommand('italic')"></button>
+  <button class="bi bi-type-underline" onclick="document.execCommand('underline')"></button>
+</div>
+  <a id="guardar" class="guardar" data-id=""><i class="bi bi-floppy h3"></i></a>
+  <a id="borrar" class="borrar" data-id=""><i class="bi bi-trash h3"></i></a>
+</div>
+
+  <h2 class="bold" id="editortitulo" contenteditable="true">
+
+  </h2>
+  <label for="cats">Categoría:</label>
+  <select name="cats" id="cats">
+
+  </select>
+  
+
+
+
+
+
+<div id="editorcont" contenteditable="true">
+</div> 
+
+
+</div>
+<div id="snotes" class="open ">
+<div class="mynotes">
+  <h2 class="bold">Mis notas</h2>
+  <a id="crear" class="crear" data-id=""><i class="bi bi-file-earmark-plus h2"></i></a>
+</div>
+<div id="contenedor" >
+</div>
+
+
+</div>
+
+  </main>
+  <footer>
+    <h6 class=" bold"> Bnotes</h6><i class="bi bi-stickies-fill h7"></i><h6 class=" "> @ Adrián Maeso Bravo</h6>
+  
+  </footer>
+  <a href="#" class="back-to-top"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

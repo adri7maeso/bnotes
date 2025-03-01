@@ -202,6 +202,31 @@ $(document).ready(function(){
 
   });
 
+  $(document).ready(function() {
+    $('#miModal').css({"display":"none"}); // Efecto de aparecer
+
+    // Mostrar el modal al hacer clic en el botón
+    $('#abrirModal').click(function() {
+      
+      $('#miModal').fadeIn(); // Efecto de aparecer
+
+    });
+  
+    // Cerrar el modal al hacer clic en la "X"
+    $('#cerrarModal').click(function() {
+      $('#miModal').fadeOut(); // Efecto de desaparecer
+    });
+  
+    // Cerrar el modal al hacer clic fuera del contenido
+    $(window).click(function(event) {
+      if ($(event.target).is('#miModal')) {
+        $('#miModal').fadeOut();
+      }
+    });
+  });
+
+
+
   $("#cats").on("change", function() {
     const catselec = $(this).val(); // Obtener el valor seleccionado
     let color =categorias.find(obj => obj.nom == catselec).col; 

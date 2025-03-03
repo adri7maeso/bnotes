@@ -6,7 +6,7 @@ let lista = [
   { id: 3, titulo: 'Renovar DNI', cat: "urgente", cont: "" }
 ];
 let categorias=[
-{nom:"compra",col:"#b8dcf5"},{nom:"trabajo",col:"#d7f7d9"},{nom:"urgente",col:"#f7d7d8"},
+{nom:"compra",col:"#c5b8f5"},{nom:"trabajo",col:"#d7f7d9"},{nom:"urgente",col:"#f7d7d8"},
 {nom:"nota",col:"#fff"}
 ]
 

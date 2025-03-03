@@ -20,6 +20,7 @@ $(document).ready(function(){
     const $contenedor = $('#contenedor');
     $contenedor.empty();
     lista.forEach(nota => {
+     var color=  categorias.find(obj => obj.nom == nota.cat).col;
       $contenedor.append(`
         <div class="nota ${nota.cat} card">
         <div class="cuerponota">
@@ -29,7 +30,7 @@ $(document).ready(function(){
         <a class="editar" data-id=${nota.id}><i class="bi bi-pencil h3"></i></a>
         </div>
         `)
-      
+
     });}
     function updatecats(){
       //const contenedor = document.getElementById('contenedor');
@@ -138,6 +139,7 @@ $(document).ready(function(){
 
     });
 
+    update();
 
     
         

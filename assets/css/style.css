@@ -148,6 +148,7 @@ flex-wrap: wrap;
   height: 100%;
 float: left;
 left:-100%;
+margin-bottom: 10%;
 }
 #cats{
   margin-bottom: 4%;
